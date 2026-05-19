@@ -21,7 +21,7 @@ model User {
   email      String     @unique
   password   String
   isApprove  Boolean    @default(false) @map("is_approve")
-  role       String
+  role       String?
   purchases  Purchase[]
   sales      Sale[]
 
